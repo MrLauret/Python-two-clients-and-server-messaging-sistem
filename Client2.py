@@ -5,7 +5,7 @@ TheIP = ("127.0.0.1", 1025)
 ClientSocket = socket.socket()
 ClientSocket.connect(TheIP)
 
-TalkTo = input("Who do you want to contact? (Kim/Lauret) ").encode()
+TalkTo = input("Who do you want to contact? (1/2) ").encode()
 ClientSocket.send(TalkTo)
 
 Username = input("Username: ").encode()
